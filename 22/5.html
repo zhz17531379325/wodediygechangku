@@ -20,8 +20,14 @@
     <li>苹果<span class="del"> 删除</span></li>
     <li>鸭梨<span class="del"> 删除</span></li>
 </ul>
-
-
     </div>
+    <script>
+        var aDel = document.querySelectorAll(".del");
+        for(var i = 0;i<aDel.length;i++){
+        aDel[i].onclick = function(){
+        var parent = this.parentNode
+        parent.parentNode.removeChild(parent)
+    }
+}</script>
 </body>
 </html>
